@@ -1,9 +1,9 @@
 {
-  "name": "angular2-seed-sass",
-  "version": "0.0.0",
-  "description": "Seed for Angular 2 apps using Sass",
+  "name": "kdoc",
+  "version": "0.0.1",
+  "description": "Korea Developer Open Community",
   "repository": {
-    "url": "https://github.com/archfirst/angular2-seed-sass"
+    "url": "https://github.com/neochaex/kdoc.git"
   },
   "scripts": {
     "build.dev": "gulp build.dev",

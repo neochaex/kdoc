@@ -1,0 +1,29 @@
+//naming conventions by OOCSS
+// Objects(Modules, Components): .media
+// Child Objects: .media__img, .media__body
+// Modifiers: .media--inline, .media__img--right
+// States: .media.is-active
+
+//1st Principle. Separation of Structure from Skin: .btn {structure} .btn--primary {skin}
+//2nd Principle. Separation of Container from Content: 
+
+
+// CSS Resets & Default Styles, HTML only
+html {
+  box-sizing: border-box;
+  body {
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+    background: #f2f2f2;
+  }
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

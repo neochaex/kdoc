@@ -27,7 +27,7 @@ export const BOOTSTRAP_MODULE     = ENABLE_HOT_LOADING ? 'hot_loader_main' : 'ma
 export const APP_TITLE            = 'KDOC';
 
 export const APP_SRC              = 'src';
-export const ASSETS_SRC           = `${APP_SRC}/assets`;
+export const ASSETS_SRC           = `${APP_SRC}/styles`;
 
 export const TOOLS_DIR            = 'tools';
 export const DOCS_DEST            = 'docs';
@@ -52,8 +52,8 @@ export const VERSION_NODE         = '4.0.0';
 export const NG2LINT_RULES        = customRules();
 
 if (ENABLE_HOT_LOADING) {
-  console.log(chalk.bgRed.white.bold('The hot loader is temporary disabled.'));
-  process.exit(0);
+    console.log(chalk.bgRed.white.bold('The hot loader is temporary disabled.'));
+    process.exit(0);
 }
 
 interface IDependency {
@@ -84,7 +84,7 @@ export const PROD_NPM_DEPENDENCIES: IDependency[] = normalizeDependencies([
 
 // Declare local files that needs to be injected
 export const APP_ASSETS: IDependency[] = [
-  { src: `${APP_SRC}/styles/main.css`, inject: true }
+  { src: `${ASSETS_SRC}/main.css`, inject: true }
 ];
 
 

@@ -21,7 +21,7 @@ export = function buildJSDev(gulp, plugins) {
     function minifyComponentCss() {
       return gulp.src([
           join(APP_SRC, '**', '*.css'),
-          '!' + join(APP_SRC, 'assets', '**', '*.css')
+          '!' + join(APP_SRC, 'styles', '**', '*.css')
         ])
         .pipe(plugins.cssnano())
         .pipe(gulp.dest(TMP_DIR));

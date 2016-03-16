@@ -5,22 +5,38 @@
     left: 0;
     width: 232px;
     height: 100%;
+    transition: left 0.15s;
+    z-index: 99;
+    background: gray;
 }
-.content {
-    position: relative;
-    height: 100%;
-    &__header {
-        
+.header {
+    position: absolute;
+    width: 100%;
+    height: 56px;
+    background: #4285f4;
+    z-index: 100;
+    &:before {
+        box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+        content: "";
+        height: 56px;
+        left: -2%;
+        width: 104%;
+        position: absolute;
     }
-    &__body {}
-    &__footer {}
+}
+.body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 /* Breakpoints */
 
 /* Small */
 @media (max-width: 600px) {
-    
+    .sidebar {
+        left: -232px;
+    }
 }
 /* Tablet+ */
 @media (min-width: 601px) {}

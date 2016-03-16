@@ -4,7 +4,7 @@ import {APP_SRC} from '../config';
 export = function processScss(gulp, plugins) {
 
     let sassOptions = {
-        includePaths: ['src/assets']
+        includePaths: ['src/styles']
     };
 
     return function () {
